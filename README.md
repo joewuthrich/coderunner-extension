@@ -1,2 +1,2 @@
 # coderunner-extension
-This enabled live autocompletion on coderunner when you load a page.
+This enables live autocompletion on Coderunner when you load a page.
