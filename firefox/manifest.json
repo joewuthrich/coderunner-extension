@@ -12,10 +12,12 @@
       "48": "icon.png"
     }
   },
+  "content_security_policy": "script-src 'self' 'https://ace.c9.io/'; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["https://coderunner.auckland.ac.nz/*"],
+      "matches": ["https://ace.c9.io/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "web_accessible_resources": ["script.js"]
 }
