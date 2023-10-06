@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Coderunner Autocomplete Enabler",
+  "version": "1.0",
+  "description": "Enables autocomplete in the ace editor when the page is loaded.",
+  "permissions": ["activeTab"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://coderunner.auckland.ac.nz/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
