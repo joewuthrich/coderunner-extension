@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Coderunner Autocomplete Enabler",
   "version": "1.0",
   "description": "Enables autocomplete in the ace editor when the page is loaded.",
@@ -18,5 +18,10 @@
       "js": ["content.js"]
     }
   ],
-  "web_accessible_resources": ["script.js"]
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
